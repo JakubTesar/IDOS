@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDOS", "IDOS\IDOS.csproj", "{3785D2CD-5A01-4B7F-8FFA-574B7FBD5B1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3785D2CD-5A01-4B7F-8FFA-574B7FBD5B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3785D2CD-5A01-4B7F-8FFA-574B7FBD5B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3785D2CD-5A01-4B7F-8FFA-574B7FBD5B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3785D2CD-5A01-4B7F-8FFA-574B7FBD5B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
