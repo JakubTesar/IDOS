@@ -1,8 +1,33 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@using IDOS.ViewModels
+@model StopClass
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Index</title>
+</head>
+<body class="bg-dark text-white">
+<h1 class="m-2">Welcome to IDOS (FUCK)</h1>
+<div class="d-flex justify-content-center flex-wrap m-5">
+    @if (Model != null)
+    {
+        foreach (StopGroup stopGroup in Model.StopGroups)
+        {
+            <div class="card bg-dark border m-2" style="width: 25rem;">
+                <div class="card-body">
+                    <h5 class="card-title">@stopGroup.Name</h5>
+                     @foreach (Stop stop in Model.StopGroups.Stop)
+                     {
+                         
+                     }
+                </div>
+            </div>
+        }
+    }
 </div>
+</body>
+</html>
