@@ -12,26 +12,28 @@ namespace IDOS.Controllers;
 public class HomeController : Controller
 {
     public StopServis ss = new StopServis();
-    public int pageReal = 1; 
-
-    public IActionResult Index(string Name, string prev)
+    public IActionResult Index(string Name, int page)
     {
+        List<Stop> stops = new List<Stop>();
         List<Stop> epicStops = new List<Stop>();
-        if (!String.IsNullOrEmpty(prev))
+        ViewData["page"] = page;
+
+        foreach (StopGroup sto in ss.r.LoadStops().StopGroups)
         {
-            if (prev.Equals("prev"))
+            foreach (Stop stop in sto.Stops)
             {
-                pageReal -= 1;
-            }
-            else
-            {
-                pageReal += 1;
+                stops.Add(stop);
             }
         }
 
-        for (int i = pageReal-1; i < ((pageReal-1)-10); i++)
+        var list = stops.Skip(page*10).ToList();
+        for (int i = 0; i < 10; i++)
         {
-         epicStops.Add(ss.Search(Name).ElementAt(i));   
+            epicStops.Add(list.ElementAt(i));
+        }
+        if (!String.IsNullOrEmpty(Name))
+        {
+            return View(ss.Search(Name));
         }
         return View(epicStops);
     }

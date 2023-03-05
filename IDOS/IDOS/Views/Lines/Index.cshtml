@@ -47,18 +47,28 @@
         @if (Model != null)
         {
             foreach (Line line in Model)
-                    {
-                        <tr>
-                            <td>@line.Name</td>
-                            <td>@line.Type</td>
-                            <td>@line.ID</td>
-                            <td><a asp-controller="Line" asp-action="Index" asp-route-ID="@line.ID" class="btn btn-info">Detail</a><td/>
-                        </tr>
-                    }
+            {
+                <tr>
+                    <td>@line.Name</td>
+                    <td>@line.Type</td>
+                    <td>@line.ID</td>
+                    <td><a asp-controller="Line" asp-action="Index" asp-route-ID="@line.ID" class="btn btn-info">Detail</a><td/>
+                </tr>
+            }
                 
         }
         </tbody>
     </table>
+    <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a asp-controller="Lines" asp-action="Index" asp-route-page="@((int)ViewData["page"]-1)" class="page-link">Previous</a>
+                </li>
+                <li class="page-item">
+                    <a asp-controller="Lines" asp-action="Index" asp-route-page="@((int)ViewData["page"]+1)" class="page-link">Next</a>
+                </li>
+            </ul>
+        </nav>
 </div>
 
 </body>

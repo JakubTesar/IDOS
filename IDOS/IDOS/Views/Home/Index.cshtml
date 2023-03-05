@@ -1,9 +1,6 @@
 ﻿@using IDOS.ViewModels
 @model List<Stop>
-@{
-    ViewData["Page"] = 1;
-    int page = (int)ViewData["Page"];
-}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -66,10 +63,10 @@
     <nav aria-label="Page navigation example">
         <ul class="pagination">
             <li class="page-item">
-                <a asp-controller="Home" asp-action="Index" asp-route-ID="prev" class="page-link">Previous</a>
+                <a asp-controller="Home" asp-action="Index" asp-route-page="@((int)ViewData["page"]-1)" class="page-link">Previous</a>
             </li>
             <li class="page-item">
-                <a asp-controller="Home" asp-action="Index" asp-route-ID="next" class="page-link">Next</a>
+                <a asp-controller="Home" asp-action="Index" asp-route-page="@((int)ViewData["page"]+1)" class="page-link">Next</a>
             </li>
         </ul>
     </nav>
