@@ -9,26 +9,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9598e647-aeb5-468f-9001-3823b8dbc193" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/IDOS/Repositories/Repository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IDOS/ViewModels/Line.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IDOS/ViewModels/Stop.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IDOS/ViewModels/StopClass.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IDOS/ViewModels/StopGroup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IDOS/obj/Debug/net6.0/stops.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IDOS/stops.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IDOS/Controllers/LineController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IDOS/Controllers/LinesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IDOS/Controllers/StopController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IDOS/Services/LineServis.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IDOS/Services/StopServis.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IDOS/Views/Line/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IDOS/Views/Lines/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IDOS/Views/Stop/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IDOS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IDOS/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IDOS/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IDOS/IDOS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/IDOS.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IDOS/Models/ErrorViewModel.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/IDOS/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDOS/Repositories/Repository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/Repositories/Repository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDOS/ViewModels/Line.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/ViewModels/Line.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDOS/ViewModels/Stop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/ViewModels/Stop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDOS/ViewModels/StopClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/ViewModels/StopClass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDOS/ViewModels/StopGroup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/ViewModels/StopGroup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IDOS/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IDOS/Views/Home/Privacy.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IDOS/Views/Shared/Error.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IDOS/Views/Shared/_Layout.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IDOS/Views/Shared/_Layout.cshtml.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IDOS/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/Views/_ViewImports.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IDOS/Views/_ViewStart.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/Views/_ViewStart.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDOS/bin/Debug/net6.0/IDOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/bin/Debug/net6.0/IDOS.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDOS/bin/Debug/net6.0/IDOS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/bin/Debug/net6.0/IDOS.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IDOS/obj/Debug/net6.0/IDOS.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/obj/Debug/net6.0/IDOS.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDOS/obj/Debug/net6.0/IDOS.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/obj/Debug/net6.0/IDOS.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDOS/obj/Debug/net6.0/IDOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/obj/Debug/net6.0/IDOS.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDOS/obj/Debug/net6.0/IDOS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/obj/Debug/net6.0/IDOS.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDOS/obj/Debug/net6.0/ref/IDOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/obj/Debug/net6.0/ref/IDOS.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDOS/obj/Debug/net6.0/refint/IDOS.dll" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/obj/Debug/net6.0/refint/IDOS.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IDOS/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/IDOS/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +43,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/18c7de6a7132663af691f7f0e1c8e3c5f672c6a69b7844a1cd0d8bcf94d87e9/ThrowHelper.Serialization.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/413caed52dc82d893b2efdb3db779d18f08444d75d9736cebf9f0bbc964af/Stack.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8d3195c9ba918c7860b66ce3965d4b9f173653cfea2479e8bb842d3513a89b/RazorPageOfT.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/974fa14c57bab8fe29f1bddd39b1a6548b9cc8cf9e0ef5e670c2407a56d9/String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c6ad457575d35dcbff26c9a5e3fb1d92f1d3c55f25ef6ebf475367b5d8/List.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c6ecd37839cf234019749482ed6ffa34c835430d549605fffeb2ff132a1e/TagHelperExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d23a8acf42a067f78757b41d8cfbef9a17ee8a1207c44a85dfe36573de7a44/JsonSerializer.Read.String.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d555b6bc78df652895d9bf368762f415ad13deb21ca2dc977dd48593f46e2/RazorPageBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f324c62785677b53e916aa9084ae54a42014c79d132908ae191cf8e3af4cfb/File.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f3b9684f72bc2cc435eb694f7cc86eca8c240d2d1cefa1e8697a61f1f2f27f/SafeFileHandle.Windows.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IDOS/Views/Lines/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,19 +64,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.094512194",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.094512194&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.IDOS">
     <configuration name="IDOS" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/IDOS/IDOS.csproj" />
@@ -111,6 +122,10 @@
       <workItem from="1676791721430" duration="872000" />
       <workItem from="1677072264591" duration="163000" />
       <workItem from="1677223938112" duration="5440000" />
+      <workItem from="1677235587954" duration="3528000" />
+      <workItem from="1677505251679" duration="2107000" />
+      <workItem from="1677593532761" duration="8138000" />
+      <workItem from="1677918389394" duration="17881000" />
     </task>
     <servers />
   </component>
@@ -136,6 +151,8 @@
   <component name="XDebuggerManager">
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="Frame#IDOS.Controllers.StopController.Index" memberName="this" />
+        <PinnedItemInfo parentTag="Frame#IDOS.Services.StopServis.Filter" memberName="ID" />
         <PinnedItemInfo parentTag="Type#IDOS.Repositories.Repo" memberName="Stops" />
       </pinned-members>
     </pin-to-top-manager>

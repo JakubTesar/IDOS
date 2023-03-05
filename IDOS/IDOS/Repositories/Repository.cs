@@ -3,15 +3,27 @@ using IDOS.ViewModels;
 
 namespace IDOS.Repositories;
 
-public class Repositories
+public class Repository
 {
-    public List<StopGroup> Stops { get; set; } = new List<StopGroup>();
-    public StopClass? LoadStops()
+    public StopClass ReplaceLomeno()
     {
         string jsonString = File.ReadAllText("stops.json");
         StopClass stopClass = JsonSerializer.Deserialize<StopClass>(jsonString, new JsonSerializerOptions
-        {PropertyNameCaseInsensitive = true});
+            { PropertyNameCaseInsensitive = true });
+        foreach (StopGroup varStopGroup in stopClass.StopGroups)
+        {
+            foreach (Stop varStop in varStopGroup.Stops)
+            {
+                varStop.ID = varStop.ID.Replace("/", "69");
+            }
+        }
+
         return stopClass;
+    }
+
+    public StopClass? LoadStops()
+    {
+        return ReplaceLomeno();
     }
 
     public void GetAll()

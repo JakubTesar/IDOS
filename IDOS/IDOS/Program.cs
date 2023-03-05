@@ -1,12 +1,10 @@
 using IDOS.Repositories;
-using IDOS.Ser;
-Repo r = new Repo();
-r.GetAll();
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddSingleton<necopneco>();
+//builder.Services.AddSingleton<necopneco>();
 
 var app = builder.Build();
 
@@ -30,4 +28,3 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-

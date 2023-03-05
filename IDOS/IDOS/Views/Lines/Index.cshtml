@@ -1,9 +1,6 @@
 ﻿@using IDOS.ViewModels
-@model List<Stop>
-@{
-    ViewData["Page"] = 1;
-    int page = (int)ViewData["Page"];
-}
+@model List<Line>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -27,52 +24,42 @@
                 <a asp-controller="Lines" asp-action="Index" class="nav-link">Lines</a>
             </li>
         </ul>
-        <form asp-controller="Home" asp-action="Index" class="form-inline my-2 my-lg-0 d-flex justify-content-end">
-            @using (Html.BeginForm())
-            {
-                <div>
-                    Find by name: @Html.TextBox("Name")
-                    <input class="btn btn-outline-success my-2 my-sm-0 " type="submit" value="Search"/>
-                </div>
-            }
-        </form>
+         <form asp-controller="Lines" asp-action="Index" class="form-inline my-2 my-lg-0 d-flex justify-content-end">
+                            @using (Html.BeginForm())
+                                    {
+                                        <div>
+                                            Find by name: @Html.TextBox("Name")  
+                                            <input class="btn btn-outline-success my-2 my-sm-0 " type="submit" value="Search"/></div>
+                                    }</form>
     </div>
 </nav>
-
 <h1 class="m-2">Welcome to IDOS (FUCK)</h1>
 <div class="m-5">
     <table class="table table-striped table-dark">
         <thead>
         <tr>
             <th scope="col">Name</th>
+            <th scope="col">Type</th>
             <th scope="col">ID</th>
-            <th scope="col">Detail</th>
         </tr>
         </thead>
         <tbody>
         @if (Model != null)
         {
-            foreach (Stop stop in Model)
-            {
-                <tr>
-                    <td>@stop.altIdosName</td>
-                    <td>@stop.ID</td>
-                    <td><a asp-controller="Stop" asp-action="Index" asp-route-ID="@stop.ID" class="btn btn-info">Detail</a><td/>
-                </tr>
-            }
+            foreach (Line line in Model)
+                    {
+                        <tr>
+                            <td>@line.Name</td>
+                            <td>@line.Type</td>
+                            <td>@line.ID</td>
+                            <td><a asp-controller="Line" asp-action="Index" asp-route-ID="@line.ID" class="btn btn-info">Detail</a><td/>
+                        </tr>
+                    }
+                
         }
         </tbody>
     </table>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination">
-            <li class="page-item">
-                <a asp-controller="Home" asp-action="Index" asp-route-ID="prev" class="page-link">Previous</a>
-            </li>
-            <li class="page-item">
-                <a asp-controller="Home" asp-action="Index" asp-route-ID="next" class="page-link">Next</a>
-            </li>
-        </ul>
-    </nav>
 </div>
+
 </body>
 </html>
